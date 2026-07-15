@@ -52,16 +52,16 @@
 // ),
 // backgroundColor: Colors.white,
 
-// body: Stack(
-//   children: [
-//     Container(
-//       width: double.infinity,
+//  body: Stack(
+//    children: [
+//      Container(
+//        width: double.infinity,
 //       height: double.infinity,
 //       decoration: const BoxDecoration(
 //         gradient: LinearGradient(
 //           colors: [Colors.blue, Colors.green],
-//           begin: Alignment.topLeft,
-//           end: Alignment.bottomRight,
+//            begin: Alignment.topLeft,
+//            end: Aligt.bottomRight,
 //         ),
 //       ),
 
@@ -381,7 +381,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Center(
             child: Text(
-              "GITHUB",
+              "Login page",
               style: TextStyle(
                 fontSize: 26,
                 fontStyle: FontStyle.italic,
@@ -398,12 +398,11 @@ class MyApp extends StatelessWidget {
           ),
         ),
         backgroundColor: Colors.white,
-
         body: Center(
           child: Container(
             padding: EdgeInsets.all(20),
             margin: EdgeInsets.only(top: 20, bottom: 20),
-            width: 400,
+            width: 500,
             height: 550,
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black, width: 2),
@@ -456,19 +455,16 @@ class MyApp extends StatelessWidget {
                 Card(
                   color: const Color.fromARGB(255, 107, 32, 57),
                   child: ListTile(
-                    leading: Icon(Icons.link, color: Colors.white),
+                    leading: Icon(Icons.arrow_back, color: Colors.white),
                     title: Center(
                       child: Text(
-                        "Github Login",
+                        "Welcome",
                         style: TextStyle(fontSize: 26, color: Colors.white),
                       ),
                     ),
-                    trailing: Image.network(
-                      "https://cdn.iconscout.com/icon/free/png-256/free-github-logo-icon-svg-download-png-8630395.png?f=webp",
-                    ),
                   ),
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 30),
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Enter your username',
@@ -540,13 +536,14 @@ class MyApp extends StatelessWidget {
                   ),
                   style: TextStyle(color: Colors.white),
                 ),
-                SizedBox(height: 40),
+                SizedBox(height: 20),
                 Row(
                   children: [
+                    Icon(Icons.check_box_outline_blank, color: Colors.black),
                     TextButton(
                       onPressed: () {},
                       child: Text(
-                        "Forgot Password?",
+                        "Remember me",
                         style: TextStyle(
                           color: Colors.red,
                           fontSize: 20,
@@ -554,19 +551,32 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                     ),
-                    SizedBox(width: 40),
-                    ElevatedButton(
+                    SizedBox(width: 70),
+                    TextButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        fixedSize: Size(100, 50),
-                      ),
                       child: Text(
-                        "Login",
-                        style: TextStyle(fontSize: 20, color: Colors.black),
+                        "Forget password?",
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontSize: 20,
+                          // fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ],
+                ),
+
+                ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                    fixedSize: Size(500, 40),
+                  ),
+
+                  child: Text(
+                    "Login",
+                    style: TextStyle(fontSize: 20, color: Colors.black),
+                  ),
                 ),
               ],
             ),
