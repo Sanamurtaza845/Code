@@ -11,30 +11,33 @@ class Textfield extends StatelessWidget {
         foregroundColor: Colors.white,
         title: Text("TextField"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "What is Textfield?",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-          ),
-          SizedBox(height: 20),
-          Text("In Flutter, a TextField is a widget that allows the user to enter and edit text. It is commonly used for forms s",
-        
-            style: TextStyle(fontSize: 24),
-          ),
-          SizedBox(height: 20),
-          Text(
-            "Why we use textfield?",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-          ),
-          SizedBox(height: 20),
-          Text("You use a TextField to collect input from the user, such as:\nUsername\nEmail address\nPassword\nPhone number\nSearch queries"
-           ,
-            style: TextStyle(fontSize: 24),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "What is Textfield?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+            ),
+            SizedBox(height: 20),
+            Text("In Flutter, a TextField is a widget that allows the user to enter and edit text. It is commonly used for forms s",
+          
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            Text(
+              "Why we use textfield?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+            ),
+            SizedBox(height: 20),
+            Text("You use a TextField to collect input from the user, such as:\nUsername\nEmail address\nPassword\nPhone number\nSearch queries"
+             ,
+              style: TextStyle(fontSize: 24),
+            ),
+          ],
+        ),
       ),
     );
   }

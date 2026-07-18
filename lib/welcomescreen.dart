@@ -15,7 +15,7 @@ class Welcomescreen extends StatelessWidget {
 
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/wallpaper.jpg'),
+              image: AssetImage('assets/welcomepic.jpg'),
               fit: BoxFit.cover,
             ),
           ),
@@ -37,11 +37,11 @@ class Welcomescreen extends StatelessWidget {
                   },
                   style: ElevatedButton.styleFrom(
                     foregroundColor: Colors.black,
-                    backgroundColor: Colors.red,
+                    backgroundColor: Colors.deepOrangeAccent,
                   ),
                   child: const Text(
                     'Continue',
-                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 26),
                   ),
                 ),
               ],

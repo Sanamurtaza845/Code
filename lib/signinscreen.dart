@@ -49,7 +49,7 @@ class Signinscreen extends StatelessWidget {
                   //  const Color.fromARGB(255, 107, 32, 57),
                   Colors.white,
 
-                  const Color.fromARGB(255, 107, 32, 57),
+                  Colors.grey,
                 ],
               ),
             ),
@@ -59,7 +59,7 @@ class Signinscreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Card(
-                  color: const Color.fromARGB(255, 107, 32, 57),
+                  color: Colors.blueGrey,
                   child: ListTile(
                     title: Center(
                       child: Text(
@@ -170,13 +170,17 @@ class Signinscreen extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.blueGrey,
                     fixedSize: Size(500, 40),
                   ),
 
                   child: Text(
                     "Sign In",
-                    style: TextStyle(fontSize: 20, color: Colors.black),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ],

@@ -11,30 +11,33 @@ class Listtileintro extends StatelessWidget {
         foregroundColor: Colors.white,
         title: Text("Listtile"),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.start,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "What is Listtile?",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-          ),
-          SizedBox(height: 20),
-          Text(
-          "In Flutter, ListTile is a widget used to display a single row of information in a list. It often contains an icon, a title, a subtitle, and can respond to taps.",
-            style: TextStyle(fontSize: 24),
-          ),
-          SizedBox(height: 20),
-          Text(
-            "Why we use Listtile?",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
-          ),
-          SizedBox(height: 20),
-          Text(
-         "ListTile is commonly used in:\nSettings screens\nMenusContact lists\nChat apps\nNavigation drawers",
-            style: TextStyle(fontSize: 24),
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.all(20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "What is Listtile?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+            ),
+            SizedBox(height: 20),
+            Text(
+            "In Flutter, ListTile is a widget used to display a single row of information in a list. It often contains an icon, a title, a subtitle, and can respond to taps.",
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            Text(
+              "Why we use Listtile?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+            ),
+            SizedBox(height: 20),
+            Text(
+           "ListTile is commonly used in:\nSettings screens\nMenusContact lists\nChat apps\nNavigation drawers",
+              style: TextStyle(fontSize: 24),
+            ),
+          ],
+        ),
       ),
     );
   }

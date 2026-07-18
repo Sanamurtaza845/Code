@@ -49,7 +49,7 @@ class Loginscreen extends StatelessWidget {
                   //  const Color.fromARGB(255, 107, 32, 57),
                   Colors.white,
 
-                  const Color.fromARGB(255, 107, 32, 57),
+                  Colors.grey,
                 ],
               ),
             ),
@@ -90,9 +90,8 @@ class Loginscreen extends StatelessWidget {
                 ),
                 SizedBox(height: 20),
                 Card(
-                  color: const Color.fromARGB(255, 107, 32, 57),
+                  color: Colors.blueGrey,
                   child: ListTile(
-                
                     title: Center(
                       child: Text(
                         "Login",
@@ -211,13 +210,17 @@ class Loginscreen extends StatelessWidget {
                     );
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
+                    backgroundColor: Colors.blueGrey,
                     fixedSize: Size(500, 40),
                   ),
 
                   child: Text(
                     "Login",
-                    style: TextStyle(fontSize: 20, color: Colors.black),
+                    style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
               ],
